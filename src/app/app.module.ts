@@ -23,6 +23,7 @@ import { ServicosPage } from '../pages/servicos/servicos';
 import { ServicoDetalhesPage } from '../pages/servico-detalhes/servico-detalhes';
 import { EstabelecimentoPage } from '../pages/estabelecimento/estabelecimento';
 import { ServicoAgendamentoPage } from '../pages/servico-agendamento/servico-agendamento';
+import { ContatoPage } from '../pages/contato/contato';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ServicoAgendamentoPage } from '../pages/servico-agendamento/servico-age
     ServicosPage,
     ServicoDetalhesPage,
     EstabelecimentoPage,
-    ServicoAgendamentoPage
+    ServicoAgendamentoPage,
+    ContatoPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { ServicoAgendamentoPage } from '../pages/servico-agendamento/servico-age
     ServicosPage,
     ServicoDetalhesPage,
     EstabelecimentoPage,
-    ServicoAgendamentoPage
+    ServicoAgendamentoPage,
+    ContatoPage
   ],
   providers: [
     StatusBar,

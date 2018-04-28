@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ServicosPage } from '../servicos/servicos';
+import { ContatoPage } from '../contato/contato';
 
 /**
  * Generated class for the EstabelecimentoPage page.
@@ -24,6 +25,9 @@ export class EstabelecimentoPage {
   }
   proxPagesv(){
     this.navCtrl.push(ServicosPage)
+  }
+  proxPagecontato(){
+    this.navCtrl.push(ContatoPage)
   }
 
 }
