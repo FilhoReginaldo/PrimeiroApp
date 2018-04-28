@@ -1,0 +1,31 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding="true">
+
+    <img src="../../assets/imgs/logoOficial.png" alt="Logo" style="width: 26%;margin-left: 39%;margin-top: 21%;">
+
+    <ion-card>
+        <div id="inputs" padding>
+            <ion-item>
+                <ion-label floating>Usuario</ion-label>
+                <ion-input type="email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Senha</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+        </div>
+        <div id="btn">
+            <ion-row padding>
+                <button ion-button block (click)="doProximaPagina()">Entrar</button>
+                <button ion-button color="light" block (click)="doCadastrar()">Cadastre-se</button>
+            </ion-row>
+        </div>
+    </ion-card>
+
+    <ion-label style="margin-left: 32%;"><a (click)="doEsqueciSenha()">Esqueci a senha</a></ion-label>
+
+</ion-content>

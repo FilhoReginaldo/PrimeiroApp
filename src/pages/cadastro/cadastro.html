@@ -1,0 +1,127 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Cadastro</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+    <ion-label padding style="padding-bottom: 0;">Dados Pessoais:</ion-label>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Nome</ion-label>
+                    <ion-input type="text" placeholder="Nome"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Data Nascimento</ion-label>
+                    <ion-datetime placeholder="Data Nascimento" displayFormat="DD/MM/YYYY" pickerFormat="DD MM YYYY"></ion-datetime>
+                </ion-item>
+            </ion-col>
+
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>RG</ion-label>
+                    <ion-input type="text" placeholder="RG"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>CEP</ion-label>
+                    <ion-input type="text" placeholder="CEP" [(ngModel)]="objcep.cep"></ion-input>
+                </ion-item>
+            </ion-col>
+
+            <ion-col col-6>
+                <button ion-button block style="top:16px;" (click)="preencherCamposEnd(objcep)">Buscar CEP</button>
+            </ion-col>
+
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Estado</ion-label>
+                    <ion-input type="text" placeholder="Estado" [(ngModel)]="retorno.estado"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Cidade</ion-label>
+                    <ion-input type="text" placeholder="Cidade" [(ngModel)]="retorno.cidade"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Endereço</ion-label>
+                    <ion-input type="text" placeholder="Endereço" [(ngModel)]="retorno.lougradouro"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Número</ion-label>
+                    <ion-input type="text" placeholder="Número"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Complemento</ion-label>
+                    <ion-input type="text" placeholder="Complemento" [(ngModel)]="retorno.complemento"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <hr>
+    <ion-label padding style="padding-bottom: 0;">Dados de Acesso:</ion-label>
+    <ion-grid>
+        <ion-col col-12>
+            <ion-item>
+                <ion-label stacked>E-mail</ion-label>
+                <ion-input type="text" placeholder="email@exemplo.com"></ion-input>
+            </ion-item>
+        </ion-col>
+
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Senha</ion-label>
+                    <ion-input type="password" placeholder="Senha"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Confirmar Senha</ion-label>
+                    <ion-input type="password" placeholder="Confirmar Senha"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <hr>
+    <ion-row padding>
+        <ion-col col-12>
+            <button ion-button color="light" block (click)="doVoltaLogin()">Cancelar</button>
+        </ion-col>
+        <ion-col col-12>
+            <button ion-button block (click)="showAlert()">Confirmar</button>
+        </ion-col>
+    </ion-row>
+</ion-content>
