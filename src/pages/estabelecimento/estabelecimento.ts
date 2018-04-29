@@ -26,7 +26,7 @@ export class EstabelecimentoPage {
   proxPagesv(){
     this.navCtrl.push(ServicosPage)
   }
-  proxPagecontato(){
+  pageContato(){
     this.navCtrl.push(ContatoPage)
   }
 

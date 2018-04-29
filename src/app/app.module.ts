@@ -16,7 +16,6 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ConsultacepProvider } from '../providers/consultacep/consultacep';
 import { CadastroPageModule } from '../pages/cadastro/cadastro.module';
-import { AboutPage } from '../pages/about/about';
 import { ConfigPage } from '../pages/config/config';
 import { PesquisaPage } from '../pages/pesquisa/pesquisa';
 import { ServicosPage } from '../pages/servicos/servicos';
