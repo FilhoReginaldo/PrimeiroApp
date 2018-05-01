@@ -6,7 +6,7 @@
 
 </ion-header>
 
-<ion-content>
+<ion-content class="fundo" style="color: #000">
 
     <ion-label padding style="padding-bottom: 0;">Dados Pessoais:</ion-label>
     <ion-grid>
@@ -47,7 +47,7 @@
             </ion-col>
 
             <ion-col col-6>
-                <button ion-button block style="top:16px;" (click)="preencherCamposEnd(objcep)">Buscar CEP</button>
+                <button ion-button block style="top:16px;" class="botao" (click)="preencherCamposEnd(objcep)">Buscar CEP</button>
             </ion-col>
 
             <ion-col col-12>
@@ -121,7 +121,7 @@
             <button ion-button color="light" block (click)="doVoltaLogin()">Cancelar</button>
         </ion-col>
         <ion-col col-12>
-            <button ion-button block (click)="showAlert()">Confirmar</button>
+            <button ion-button block class="botao" (click)="showAlert()">Confirmar</button>
         </ion-col>
     </ion-row>
 </ion-content>
