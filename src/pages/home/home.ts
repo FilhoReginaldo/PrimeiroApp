@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { EstabelecimentoPage } from '../estabelecimento/estabelecimento';
+import { PesquisaPage } from '../pesquisa/pesquisa';
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,7 @@ export class HomePage {
 
   }
   proxPage(){
-    this.navCtrl.push(EstabelecimentoPage)
+    this.navCtrl.push(PesquisaPage)
   }
 
 }

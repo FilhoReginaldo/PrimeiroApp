@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ServicosPage } from '../servicos/servicos';
 import { ContatoPage } from '../contato/contato';
+import { ServicoDetalhesPage } from '../servico-detalhes/servico-detalhes';
 
 /**
  * Generated class for the EstabelecimentoPage page.
@@ -24,7 +24,7 @@ export class EstabelecimentoPage {
     console.log('ionViewDidLoad EstabelecimentoPage');
   }
   proxPagesv(){
-    this.navCtrl.push(ServicosPage)
+    this.navCtrl.push(ServicoDetalhesPage)
   }
   pageContato(){
     this.navCtrl.push(ContatoPage)

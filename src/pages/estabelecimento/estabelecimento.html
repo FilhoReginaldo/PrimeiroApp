@@ -6,44 +6,75 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Estabelecimento</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Estabelecimento</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-    <ion-card>
+    <div padding>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="Detalhes Gerais">
+                Detalhes Gerais
+            </ion-segment-button>
+            <ion-segment-button value="Contatos">
+                Contatos
+            </ion-segment-button>
+            <ion-segment-button value="Serviços">
+                Serviços
+            </ion-segment-button>
+        </ion-segment>
+    </div>
 
-        <ion-item>
-          <h2>Consutorio VM</h2>
-          <p>Paulista - São Paulo</p>
-        </ion-item>
-      
-        <img src="assets/imgs/cons.png.jpg">
-      
-        <ion-card-content>
-          <p>Descrição: xxxxxxxxxxxxxxxxx</p>
-        </ion-card-content>
-      
-        <ion-row>
-          <ion-col>
-            <button ion-button icon-left clear small block (click)="proxPagesv()">
-              <ion-icon name="md-construct"></ion-icon>
-              <div>Serviços</div>
-            </button>
-          </ion-col>
-          <ion-col>
-            <button ion-button icon-left clear small block (click)="pageContato()">
-              <ion-icon name="md-contacts"></ion-icon>
-              <div>Contatos</div>
-            </button>
-          </ion-col>
-         
-        </ion-row>
-      
-      </ion-card>
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'Detalhes Gerais'">
+            <ion-item>
+                <ion-label style="padding-bottom: 0;">Dados do Estabelecimento:</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>Nome do Estabelecimento</ion-label>
+                <ion-input type="text" disabled="true" placeholder="Autask Reviwes"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-card>
+                    <ion-card-header>
+                        Descrição
+                    </ion-card-header>
+                    <ion-card-content>
+                        Detalhes do estabelecimento
+                    </ion-card-content>
+                </ion-card>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'Contatos'">
+            <ion-item>
+                <ion-label style="padding-bottom: 0;">Contato do Estabelecimento:</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>Telefone</ion-label>
+                <ion-input type="text" disabled="true" placeholder="11 950596884"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>E-mail</ion-label>
+                <ion-input type="text" disabled="true" placeholder="seu@gmail.com"></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'Serviços'">
+            <ion-list-header>
+                Serviços Prestados
+            </ion-list-header>
+            <ion-list>
+                <button ion-item (click)="proxPagesv()">Teste</button>
+                <button ion-item (click)="proxPagesv()">Teste</button>
+                <button ion-item (click)="proxPagesv()">Teste</button>
+            </ion-list>
+        </ion-list>
+    </div>
 
 </ion-content>

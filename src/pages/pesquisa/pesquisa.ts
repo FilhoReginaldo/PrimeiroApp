@@ -1,6 +1,6 @@
+import { EstabelecimentoPage } from './../estabelecimento/estabelecimento';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EstabelecimentoPage } from '../estabelecimento/estabelecimento';
 
 /**
  * Generated class for the PesquisaPage page.
@@ -19,9 +19,8 @@ export class PesquisaPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PesquisaPage');
+  proxPage(){
+    this.navCtrl.push(EstabelecimentoPage)
   }
-
 
 }
