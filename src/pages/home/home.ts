@@ -1,5 +1,6 @@
+import { ModelServicoPage } from './../model-servico/model-servico';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { PesquisaPage } from '../pesquisa/pesquisa';
 
 @Component({
@@ -8,11 +9,17 @@ import { PesquisaPage } from '../pesquisa/pesquisa';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+    public modalCtrl: ModalController) {
 
   }
   proxPage(){
     this.navCtrl.push(PesquisaPage)
+  }
+
+  model(){
+    let modal = this.modalCtrl.create(ModelServicoPage);
+    modal.present();
   }
 
 }

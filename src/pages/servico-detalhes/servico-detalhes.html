@@ -6,14 +6,54 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Detalhes</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Detalhes do Serviço</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  
-    <button ion-button block (click)="pageProx()">Agendar</button>
+    <ion-grid>
+        <ion-row>
+
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Estabelecimento:</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked>Serviço:</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>Custo:</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked>Duração:</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+
+            <ion-card>
+                <ion-card-header>
+                    Descrição Geral
+                </ion-card-header>
+                <ion-card-content>
+                    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                </ion-card-content>
+            </ion-card>
+        </ion-row>
+    </ion-grid>
+    <button ion-button block>Agendar</button>
 </ion-content>

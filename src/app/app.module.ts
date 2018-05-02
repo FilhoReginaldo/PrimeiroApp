@@ -1,3 +1,4 @@
+import { ModelServicoPage } from './../pages/model-servico/model-servico';
 import { EsqueciSenhaPageModule } from './../pages/esqueci-senha/esqueci-senha.module';
 import { EsqueciSenhaPage } from './../pages/esqueci-senha/esqueci-senha';
 import { LoginPageModule } from './../pages/login/login.module';
@@ -18,7 +19,6 @@ import { ConsultacepProvider } from '../providers/consultacep/consultacep';
 import { CadastroPageModule } from '../pages/cadastro/cadastro.module';
 import { ConfigPage } from '../pages/config/config';
 import { PesquisaPage } from '../pages/pesquisa/pesquisa';
-import { ServicosPage } from '../pages/servicos/servicos';
 import { ServicoDetalhesPage } from '../pages/servico-detalhes/servico-detalhes';
 import { EstabelecimentoPage } from '../pages/estabelecimento/estabelecimento';
 import { ServicoAgendamentoPage } from '../pages/servico-agendamento/servico-agendamento';
@@ -34,11 +34,11 @@ import { ContatoPage } from '../pages/contato/contato';
     EsqueciSenhaPage,
     ConfigPage,
     PesquisaPage,
-    ServicosPage,
     ServicoDetalhesPage,
     EstabelecimentoPage,
     ServicoAgendamentoPage,
-    ContatoPage
+    ContatoPage,
+    ModelServicoPage
   ],
   imports: [
     BrowserModule,
@@ -55,11 +55,11 @@ import { ContatoPage } from '../pages/contato/contato';
     EsqueciSenhaPage,
     ConfigPage,
     PesquisaPage,
-    ServicosPage,
     ServicoDetalhesPage,
     EstabelecimentoPage,
     ServicoAgendamentoPage,
-    ContatoPage
+    ContatoPage,
+    ModelServicoPage
   ],
   providers: [
     StatusBar,
